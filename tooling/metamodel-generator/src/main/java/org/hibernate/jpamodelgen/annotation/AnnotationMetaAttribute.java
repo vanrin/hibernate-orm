@@ -43,6 +43,13 @@ public abstract class AnnotationMetaAttribute implements MetaAttribute {
 				.append( "> " )
 				.append( getPropertyName() )
 				.append( ";" )
+				.append( "\r\n\t" )
+				.append( "public static final String " )
+				.append( getPropertyName().toUpperCase() )
+				.append( " = \"" )
+				.append( getPropertyName() )
+				.append( "\"" )
+				.append( ";" )
 				.toString();
 	}
 
